@@ -24,31 +24,29 @@ Para a construção do sistema, foram utilizadas as seguintes tecnologias:
 ## Padrões do projeto
 
 **Sintaxe | Nomenclaturas:**
-- Pacotes: lowercase.example
-- Classes: UpperCamelCase
-- Variáveis, funções (métodos): lowerCamelCase
-- Constantes: UPPER_SNAKE_CASE
+- **Pacotes:** `lowercase.example`
+- **Classes:** `UpperCamelCase`
+- **Variáveis e Métodos:** `lowerCamelCase`
+- **Constantes:** `UPPER_SNAKE_CASE`
 
-**Padrão de commits/branches:** 
-Serão escritos em Português; 
-Formato: “Prefixo + descrição“
+**Padrão de commits/branches:** Serão escritos em Português, no formato: `prefixo: descricao`
 
 ```Shell
-git commit -m 'feat: message' # <nova funcionalidade>
-git commit -m 'fix: message' # <correção de bug>
-git commit -m 'docs: message' # <documentação>
-git commit -m 'style: message' # <mudanças que não afetam o sentido do código>
-git commit -m 'refactor: message' # <refazer algo; não corrige um bug nem adiciona funcionalidade>
-git commit -m 'perf: message' # <código que melhora a performance>
-git commit -m 'test: message' # <adicinoa testes faltando ou corrige os tests existentes>
-git commit -m 'build: message' # <mudanças que afetam a construção ou dependências do projeto>
-git commit -m 'ci: message' # <mudanças que afetam os arquivos de configração de CI>
-git commit -m 'chore: message' # <mudanças que não modificam arquivos src ou de  testes>
+git commit -m 'feat: descricao' # <nova funcionalidade>
+git commit -m 'fix: descricao' # <correção de bug>
+git commit -m 'docs: descricao' # <documentação>
+git commit -m 'style: descricao' # <mudanças que não afetam o sentido do código>
+git commit -m 'refactor: descricao' # <refazer algo; não corrige um bug nem adiciona funcionalidade>
+git commit -m 'perf: descricao' # <código que melhora a performance>
+git commit -m 'test: descricao' # <adicinoa testes faltando ou corrige os tests existentes>
+git commit -m 'build: descricao' # <mudanças que afetam a construção ou dependências do projeto>
+git commit -m 'ci: descricao' # <mudanças que afetam os arquivos de configração de CI>
+git commit -m 'chore: descricao' # <mudanças que não modificam arquivos src ou de  testes>
 ```
 
 
-**Padrão de comentários no código:** 
-Serão feitos em Português; Seguir o padrão do Google:
+**Padrão de comentários no código:** Serão feitos em Português, seguindo o padrão do Google:
+
 ```Java
 /**
   * Multiplas linhas de texto de Javadoc são escritas aqui,
@@ -63,7 +61,8 @@ Serão feitos em Português; Seguir o padrão do Google:
 > Descrever aqui como fazer o setup do projeto na máquina dos colaboradores.
 
 **IDE:** VSCode
-   **Extensões `obrigatórias`:** 
+
+Extensões **obrigatórias:** 
    - Java Extension Pack
    - Spring Boot Extension Pack
    - JavaFX Support
