@@ -3,7 +3,6 @@
 Repositório para desenvolvimento de um Sistema para hotelaria desenvolvido para a disciplina de DSC.
 
 **Nome do pacote (group_id)**: br.com.sigep
-
 **Nome do artefato (artifact_id)**: sigep
 
 **Responsáveis:**
