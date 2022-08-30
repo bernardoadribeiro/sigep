@@ -53,6 +53,9 @@ public class Endereco {
     
 
     /* Construtores */
+    public Endereco() {
+    }
+    
     public Endereco(long id, String logradouro, String numero,
             String complemento, String bairro, String codigoPostal, String cidade, String uf, String pais) {
         this.id = id;
@@ -66,8 +69,9 @@ public class Endereco {
         this.cidade = cidade;
         this.uf = uf;
         this.pais = pais;
-    }
+    } 
 
+    
     /* Getters and setters */
     public long getId() {
         return id;

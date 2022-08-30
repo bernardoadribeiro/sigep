@@ -59,6 +59,9 @@ public class FinanceiroFechamento implements Serializable {
     public FinanceiroFechamentoStatus statusFechamento;
 
     /* Construtores */
+    public FinanceiroFechamento() {
+    }
+
     public FinanceiroFechamento(long id, Date dataReferencia,
             BigDecimal faturamentoReservas, BigDecimal receitaReservas, BigDecimal faturamentoVendas,
             BigDecimal receitaVendas, BigDecimal despesas, BigDecimal saldoInicial, BigDecimal saldoFinal,

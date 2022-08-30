@@ -89,6 +89,8 @@ public class Reserva implements Serializable {
 
 
     /* Construtores */
+    public Reserva() {
+    }
     
     //Construtor Reserva
     public Reserva(long id, String codigoReserva, Date checkin, Date checkout, Quarto quarto, Pessoa hospedePrincipal,

@@ -15,6 +15,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+//import javax.persistence.Transient;
 import javax.persistence.Version;
 
 @Entity
@@ -63,8 +64,15 @@ public class Pessoa implements Serializable {
     @Column(name = "senha", nullable = false)
     private String senha;
 
+    @Column(name = "isAtivo", nullable = false)
+    private boolean isAtivo;
+
 
     /* Construtores */
+    public Pessoa() {
+        this(0, "", "");
+    }
+    
     public Pessoa(long id, String email, String nome) {
         this.id = id;
         this.dataCriacao = new Date();
@@ -78,7 +86,8 @@ public class Pessoa implements Serializable {
         this.dataNasc = null;
         this.genero = Genero.NaoInformado;
         this.email = email;
-        this.senha = null;
+        this.senha = "";
+        this.isAtivo = true;
     }
 
     public Pessoa(long id, String nome, String apelido, String cpf,
@@ -97,6 +106,7 @@ public class Pessoa implements Serializable {
         this.genero = genero;
         this.email = email;
         this.senha = senha;
+        this.isAtivo = true;
     }
 
 
@@ -205,6 +215,13 @@ public class Pessoa implements Serializable {
         this.senha = senha;
     }
 
+    public boolean isAtivo() {
+        return isAtivo;
+    }
+
+    public void setAtivo(boolean isAtivo) {
+        this.isAtivo = isAtivo;
+    }
     
     /* hashCode and equals */
     @Override

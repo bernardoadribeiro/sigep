@@ -41,6 +41,9 @@ public class Propriedade {
 
 
     /* Construtores */
+    public Propriedade() {
+    }
+
     public Propriedade(long id, String codigoPropriedade, int qtdQuartos, Endereco endereco) {
         this.id = id;
         this.dataCriacao = new Date();

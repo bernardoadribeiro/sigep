@@ -58,7 +58,11 @@ public class Quarto implements Serializable {
     @JoinColumn(name = "propriedadeID")
     private Propriedade propriedade;
 
+
     /* Construtores */
+    public Quarto() {
+    }
+
     public Quarto(long id, int numQuarto, QuartoCategoria categoria,
             QuartoStatus status, int qtdCamaCasal, int qtdCamaSolteiro, int capacidade, BigDecimal precoDiaria,
             Propriedade propriedade) {

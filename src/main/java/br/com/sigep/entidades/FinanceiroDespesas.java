@@ -56,6 +56,9 @@ public class FinanceiroDespesas  implements Serializable{
     private String comentario;
 
     /* Construtores */
+    public FinanceiroDespesas() {
+    }
+
     public FinanceiroDespesas(long id, Date dataDespesa, FinanceiroDespesasMotivo motivoDespesa, BigDecimal valor, 
             BigDecimal totalPago, PagamentoForma formaPagamento, String comprovantePagamento, 
             FinanceiroDespesasStatus statusPagamento, String comentario) {
