@@ -1,4 +1,4 @@
-package br.com.sigep.entidades;
+package br.com.sigep.entidades.financeiro;
 
 public enum PagamentoForma {
     CartaoCredito,

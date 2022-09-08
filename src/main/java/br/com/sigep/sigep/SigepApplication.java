@@ -10,7 +10,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-import br.com.sigep.entidades.Pessoa;
+import br.com.sigep.entidades.pessoa.Pessoa;
 
 @EntityScan("br.com.sigep")
 @SpringBootApplication

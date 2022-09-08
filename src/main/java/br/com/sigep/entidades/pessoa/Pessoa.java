@@ -1,4 +1,4 @@
-package br.com.sigep.entidades;
+package br.com.sigep.entidades.pessoa;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -17,6 +17,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 //import javax.persistence.Transient;
 import javax.persistence.Version;
+
+import br.com.sigep.entidades.endereco.Endereco;
 
 @Entity
 @Table(name = "Pessoas")

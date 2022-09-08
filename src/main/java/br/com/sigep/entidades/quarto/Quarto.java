@@ -1,4 +1,4 @@
-package br.com.sigep.entidades;
+package br.com.sigep.entidades.quarto;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -17,6 +17,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Version;
+
+import br.com.sigep.entidades.propriedade.Propriedade;
 
 @Entity
 @Table(name = "Quartos")

@@ -1,4 +1,4 @@
-package br.com.sigep.entidades;
+package br.com.sigep.entidades.quarto;
 
 public enum QuartoCategoria {
     Junior,

@@ -1,4 +1,4 @@
-package br.com.sigep.entidades;
+package br.com.sigep.entidades.reserva;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -19,6 +19,11 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Version;
+
+import br.com.sigep.entidades.financeiro.PagamentoStatus;
+import br.com.sigep.entidades.financeiro.PagamentoForma;
+import br.com.sigep.entidades.pessoa.Pessoa;
+import br.com.sigep.entidades.quarto.Quarto;
 
 @Entity
 @Table(name = "Reservas")

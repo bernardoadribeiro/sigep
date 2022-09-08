@@ -1,4 +1,4 @@
-package br.com.sigep.entidades;
+package br.com.sigep.entidades.propriedade;
 
 import java.util.Date;
 
@@ -13,6 +13,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Version;
+
+import br.com.sigep.entidades.endereco.Endereco;
 
 @Entity
 @Table(name = "Propriedades")

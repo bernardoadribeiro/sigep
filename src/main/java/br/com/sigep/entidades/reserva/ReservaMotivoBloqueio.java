@@ -1,4 +1,4 @@
-package br.com.sigep.entidades;
+package br.com.sigep.entidades.reserva;
 
 public enum ReservaMotivoBloqueio {
     Manutencao,
