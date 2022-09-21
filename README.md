@@ -1,4 +1,8 @@
 # SIGEP - Desktop
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 
 Repositório para desenvolvimento de um Sistema para hotelaria desenvolvido para a disciplina de DSC.
 
@@ -29,6 +33,7 @@ Para a construção do sistema, foram utilizadas as seguintes tecnologias:
 - **Classes:** `UpperCamelCase`
 - **Variáveis e Métodos:** `lowerCamelCase`
 - **Constantes:** `UPPER_SNAKE_CASE`
+- **Língua:** pt-BR
 
 **Padrão de commits/branches:** Serão escritos em Português, no formato: `prefixo: descricao`
 
