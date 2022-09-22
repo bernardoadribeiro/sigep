@@ -7,9 +7,8 @@ import javax.transaction.Transactional;
 //import org.springframework.beans.factory.annotation.Autowired;
 
 import br.com.sigep.entidades.pessoa.Pessoa;
-import br.com.sigep.servicos.RepositorioPessoa;
 
-public class PessoaDAO<T extends Pessoa> extends DAO<T> implements RepositorioPessoa{
+public class PessoaDAO<T extends Pessoa> extends DAO<T>{
 
     // @Autowired
     // protected LogServico log;
