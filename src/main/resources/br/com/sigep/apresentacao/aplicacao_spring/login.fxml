@@ -22,7 +22,7 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.LoginController">
          <children>
             <ImageView fitHeight="398.0" fitWidth="499.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/SIGEP-logo.png" />
+                  <Image url="@../images/logo-sigep.png" />
                </image>
             </ImageView>
          </children>
