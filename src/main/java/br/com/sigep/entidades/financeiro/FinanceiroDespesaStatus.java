@@ -1,6 +1,6 @@
 package br.com.sigep.entidades.financeiro;
 
-public enum FinanceiroDespesasStatus {
+public enum FinanceiroDespesaStatus {
     Pendente,
     Pago
 }

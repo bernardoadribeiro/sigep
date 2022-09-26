@@ -4,9 +4,9 @@ import java.util.Date;
 
 import javax.transaction.Transactional;
 
-import br.com.sigep.entidades.financeiro.FinanceiroDespesas;
+import br.com.sigep.entidades.financeiro.FinanceiroDespesa;
 
-public class FinanceiroDespesaDAO<T extends FinanceiroDespesas> extends DAO<T>{
+public class FinanceiroDespesaDAO<T extends FinanceiroDespesa> extends DAO<T>{
 
     // @Autowired
     // protected LogServico log;

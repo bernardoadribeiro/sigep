@@ -18,7 +18,7 @@ import javax.persistence.Version;
 
 @Entity
 @Table(name = "FinanceiroDespesas")
-public class FinanceiroDespesas  implements Serializable{
+public class FinanceiroDespesa  implements Serializable{
     /* Atributos */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,7 +35,7 @@ public class FinanceiroDespesas  implements Serializable{
     private Date dataDespesa;
 
     @Enumerated(EnumType.STRING)
-    private FinanceiroDespesasMotivo motivoDespesa;
+    private FinanceiroDespesaMotivo motivoDespesa;
 
     @Column(name = "valor", nullable = false)
     private BigDecimal valor;
@@ -50,18 +50,18 @@ public class FinanceiroDespesas  implements Serializable{
     private String comprovantePagamento;
 
     @Enumerated(EnumType.STRING)
-    private FinanceiroDespesasStatus statusPagamento;
+    private FinanceiroDespesaStatus statusPagamento;
 
     @Column(name = "comentario")
     private String comentario;
 
     /* Construtores */
-    public FinanceiroDespesas() {
+    public FinanceiroDespesa() {
     }
 
-    public FinanceiroDespesas(long id, Date dataDespesa, FinanceiroDespesasMotivo motivoDespesa, BigDecimal valor, 
+    public FinanceiroDespesa(long id, Date dataDespesa, FinanceiroDespesaMotivo motivoDespesa, BigDecimal valor, 
             BigDecimal totalPago, PagamentoForma formaPagamento, String comprovantePagamento, 
-            FinanceiroDespesasStatus statusPagamento, String comentario) {
+            FinanceiroDespesaStatus statusPagamento, String comentario) {
         this.id = id;
         this.dataCriacao = new Date();
         this.ultimaAtualizacao = new Date();
@@ -109,11 +109,11 @@ public class FinanceiroDespesas  implements Serializable{
         this.dataDespesa = dataDespesa;
     }
 
-    public FinanceiroDespesasMotivo getMotivoDespesa() {
+    public FinanceiroDespesaMotivo getMotivoDespesa() {
         return motivoDespesa;
     }
 
-    public void setMotivoDespesa(FinanceiroDespesasMotivo motivoDespesa) {
+    public void setMotivoDespesa(FinanceiroDespesaMotivo motivoDespesa) {
         this.motivoDespesa = motivoDespesa;
     }
 
@@ -149,11 +149,11 @@ public class FinanceiroDespesas  implements Serializable{
         this.comprovantePagamento = comprovantePagamento;
     }
 
-    public FinanceiroDespesasStatus getStatusPagamento() {
+    public FinanceiroDespesaStatus getStatusPagamento() {
         return statusPagamento;
     }
 
-    public void setStatusPagamento(FinanceiroDespesasStatus statusPagamento) {
+    public void setStatusPagamento(FinanceiroDespesaStatus statusPagamento) {
         this.statusPagamento = statusPagamento;
     }
 
@@ -193,7 +193,7 @@ public class FinanceiroDespesas  implements Serializable{
             return false;
         if (getClass() != obj.getClass())
             return false;
-        FinanceiroDespesas other = (FinanceiroDespesas) obj;
+        FinanceiroDespesa other = (FinanceiroDespesa) obj;
         if (comentario == null) {
             if (other.comentario != null)
                 return false;
