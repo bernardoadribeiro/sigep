@@ -20,13 +20,21 @@ public class PessoaDAO<T extends Pessoa> extends DAO<T>{
     /* Salva objeto pessoa */
     @Override
     @Transactional
-    public boolean Salvar(T obj) {
-        if(obj.getId() == 0){
-            obj.setDataCriacao(new Date());
+    public boolean Salvar(T objPessoa) {
+        if(objPessoa.getId() == 0){
+            objPessoa.setDataCriacao(new Date());
         }
-        obj.setUltimaAtualizacao(new Date());
+        objPessoa.setUltimaAtualizacao(new Date());
 
-        return super.Salvar(obj);
+        return super.Salvar(objPessoa);
+    }
+
+    /* Atualiza Pessoa existente */
+    @Override
+    @Transactional
+    public T Atualizar(T objPessoa){
+        objPessoa.setUltimaAtualizacao(new Date());
+        return super.Atualizar(objPessoa);
     }
     
 }

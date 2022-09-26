@@ -104,7 +104,7 @@ public class Reserva implements Serializable {
         this.id = id;
         this.dataCriacao = new Date();
         this.ultimaAtualizacao = new Date();
-        this.codigoReserva = codigoReserva;
+        this.codigoReserva = gerarCodigo(false);
         this.checkin = checkin;
         this.checkout = checkout;
         this.quarto = quarto;
@@ -129,7 +129,7 @@ public class Reserva implements Serializable {
         this.id = id;
         this.dataCriacao = new Date();
         this.ultimaAtualizacao = new Date();
-        this.codigoReserva = codigoReserva;
+        this.codigoReserva = gerarCodigo(true);
         this.checkin = checkin;
         this.checkout = checkout;
         this.quarto = quarto;
@@ -427,5 +427,18 @@ public class Reserva implements Serializable {
                 + totalPago + ", ultimaAtualizacao=" + ultimaAtualizacao + ", usuarioCriador=" + usuarioCriador
                 + ", valorReserva=" + valorReserva + ", valorTotal=" + valorTotal + "]";
     }   
+    
+    /* Implementar geracao de codigo da Reserva/Bloqueio */
+    public String gerarCodigo(Boolean isBloqueio) {
+        String codigo = "";
+        
+        if (isBloqueio) {
+
+        } else {
+
+        }
+
+        return codigo;
+    }
     
 }
