@@ -65,7 +65,7 @@
                            <graphic>
                               <ImageView fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../images/icons/outline_calendar_today_white_24dp.png" />
+                                    <Image url="@../../images/icons/outline_night_shelter_white_24dp.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -73,7 +73,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </JFXButton>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservas" wrappingWidth="208.13671875">
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Quarto" wrappingWidth="208.13671875">
                            <font>
                               <Font name="Arial Bold" size="18.0" />
                            </font>
@@ -153,7 +153,7 @@
                               <Font name="Arial Bold" size="16.0" />
                            </font>
                         </Label>
-                        <Label fx:id="labelCargo" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="64.0" prefHeight="20.0" prefWidth="141.0" text="Atendimento" textAlignment="CENTER" textFill="#ffffffcf">
+                        <Label fx:id="labelCargo" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="64.0" prefHeight="20.0" prefWidth="141.0" text="Proprietário" textAlignment="CENTER" textFill="#ffffffcf">
                            <font>
                               <Font name="Arial" size="14.0" />
                            </font>
