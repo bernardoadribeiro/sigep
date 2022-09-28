@@ -4,14 +4,19 @@ import java.util.Date;
 
 import javax.transaction.Transactional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import br.com.sigep.entidades.log.LogNivel;
+
 //import org.springframework.beans.factory.annotation.Autowired;
 
 import br.com.sigep.entidades.pessoa.Pessoa;
+import br.com.sigep.servicos.log.LogServico;
 
 public class PessoaDAO<T extends Pessoa> extends DAO<T>{
 
-    // @Autowired
-    // protected LogServico log;
+     @Autowired
+     protected LogServico log;
 
     public PessoaDAO(Class<T> classe) {
         super(classe);
@@ -25,6 +30,8 @@ public class PessoaDAO<T extends Pessoa> extends DAO<T>{
             objPessoa.setDataCriacao(new Date());
         }
         objPessoa.setUltimaAtualizacao(new Date());
+
+        log.registrar(LogNivel.Informacao, "Salvar", "Nome");
 
         return super.Salvar(objPessoa);
     }
