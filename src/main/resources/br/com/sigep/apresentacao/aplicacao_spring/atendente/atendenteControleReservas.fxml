@@ -17,8 +17,10 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="726.0" prefWidth="1024.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="749.0" prefWidth="757.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="br.com.sigep.apresentacao.aplicacao_spring.atendente.ControleReservasController">
    <children>
+      <fx:include source="../telaBase.fxml"></fx:include>
       <VBox layoutX="144.0" layoutY="91.0" prefHeight="749.0" prefWidth="757.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reservas">
@@ -35,13 +37,13 @@
                      <items>
                         <AnchorPane>
                            <children>
-                              <TextField fx:id="numQuarto" layoutX="14.0" layoutY="36.0" prefHeight="25.0" prefWidth="68.0" />
+                              <TextField fx:id="numQuarto" layoutX="14.0" layoutY="36.0" prefHeight="25.0" prefWidth="68.0" promptText="Núm. do Quarto" />
                               <Label layoutX="14.0" layoutY="14.0" text="nº do quarto">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <DatePicker fx:id="dataReferencia" layoutX="95.0" layoutY="35.0" prefHeight="25.0" prefWidth="124.0">
+                              <DatePicker fx:id="data_ref" layoutX="95.0" layoutY="35.0" prefHeight="25.0" prefWidth="124.0">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
@@ -78,8 +80,8 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </JFXButton>
-                              <ChoiceBox fx:id="seletorTipo" layoutX="340.0" layoutY="36.0" prefHeight="25.0" prefWidth="102.0" />
-                              <ComboBox fx:id="seletorCategoria" layoutX="229.0" layoutY="36.0" prefHeight="25.0" prefWidth="100.0" promptText="Selecione">
+                              <ChoiceBox fx:id="tipoImovel" layoutX="340.0" layoutY="36.0" prefHeight="25.0" prefWidth="102.0" />
+                              <ComboBox fx:id="categoriaImovel" layoutX="229.0" layoutY="36.0" prefHeight="25.0" prefWidth="100.0" promptText="Selecione">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
                                  </cursor>

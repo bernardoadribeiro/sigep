@@ -2,7 +2,7 @@ package br.com.sigep.apresentacao.aplicacao_spring;
 
 import org.springframework.stereotype.Service;
 
-import br.com.sigep.apresentacao.aplicacao_spring.atendente.TelaPrincipalController;
+import br.com.sigep.apresentacao.aplicacao_spring.atendente.ControleReservasController;
 
 //import com.jfoenix.controls.JFXButton.ButtonType;
 
@@ -18,7 +18,7 @@ import net.rgielen.fxweaver.core.FxmlView;
 
 @Service
 @FxmlView("login/login.fxml")
-public class LoginController {
+public class LoginController extends Controller {
 
     public LoginController() {
     }
@@ -29,17 +29,18 @@ public class LoginController {
     @FXML
     private PasswordField passwordLogin;
 
-    // @FXML
-    // BorderPane telaLogin;
+    @FXML
+    BorderPane telaLogin;
+    
 
     @FXML
     public void botaoClicar(Event e){
         Alert alert = new Alert(AlertType.INFORMATION, "Bem vindo ao sistema! "+emailLogin.getText(), ButtonType.OK);
         alert.showAndWait();
 
-        // if (alert.getResult() == ButtonType.OK){
-        //     carregarScene(telaLogin, TelaPrincipalController.class);
-        // }
+        if (alert.getResult() == ButtonType.OK){
+            carregarScene(telaLogin, ControleReservasController.class);
+        }
     }
 
 }
