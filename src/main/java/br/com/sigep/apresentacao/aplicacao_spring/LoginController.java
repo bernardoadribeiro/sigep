@@ -14,7 +14,7 @@ import javafx.scene.control.Alert.AlertType;
 import net.rgielen.fxweaver.core.FxmlView;
 
 @Service
-@FxmlView("login.fxml")
+@FxmlView("login/login.fxml")
 public class LoginController {
 
     public LoginController() {
