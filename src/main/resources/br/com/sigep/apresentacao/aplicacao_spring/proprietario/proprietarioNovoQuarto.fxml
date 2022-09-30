@@ -12,11 +12,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="726.0" prefWidth="1024.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="749.0" prefWidth="708.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox layoutX="144.0" layoutY="91.0" prefHeight="749.0" prefWidth="757.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Novo Quarto" wrappingWidth="217.765625">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastrar novo quarto" wrappingWidth="499.765625">
                <font>
                   <Font name="Arial Rounded MT Bold" size="32.0" />
                </font>
@@ -30,56 +30,64 @@
                      <items>
                         <AnchorPane layoutX="10.0" layoutY="10.0">
                            <children>
-                              <TextField layoutX="60.0" layoutY="96.0" prefHeight="25.0" prefWidth="92.0" promptText="N° do quarto" />
+                              <TextField layoutX="60.0" layoutY="96.0" prefHeight="25.0" prefWidth="124.0" promptText="N° do quarto" />
                               <Label layoutX="60.0" layoutY="71.0" prefHeight="17.0" prefWidth="106.0" text="N° do quarto">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="193.0" layoutY="71.0" prefHeight="17.0" prefWidth="106.0" text="Categoria">
+                              <Label layoutX="60.0" layoutY="147.0" prefHeight="17.0" prefWidth="106.0" text="Categoria">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <ComboBox layoutX="193.0" layoutY="96.0" prefHeight="25.0" prefWidth="175.0" promptText="Selecione a categoria" />
-                              <Label layoutX="410.0" layoutY="70.0" prefHeight="17.0" prefWidth="106.0" text="Valor da diária">
+                              <ComboBox layoutX="60.0" layoutY="172.0" prefHeight="25.0" prefWidth="124.0" promptText="Selecione a categoria" />
+                              <Label layoutX="526.0" layoutY="73.0" prefHeight="17.0" prefWidth="106.0" text="Valor da diária">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <TextField layoutX="410.0" layoutY="97.0" prefHeight="25.0" prefWidth="124.0" text="R$ " />
-                              <TextField layoutX="60.0" layoutY="175.0" prefHeight="25.0" prefWidth="92.0" promptText="Capacidade" />
-                              <Label layoutX="60.0" layoutY="147.0" prefHeight="17.0" prefWidth="106.0" text="Capacidade">
+                              <TextField layoutX="526.0" layoutY="100.0" prefHeight="25.0" prefWidth="124.0" promptText="R$" />
+                              <TextField layoutX="294.0" layoutY="99.0" prefHeight="25.0" prefWidth="124.0" promptText="Capacidade" />
+                              <Label layoutX="294.0" layoutY="71.0" prefHeight="17.0" prefWidth="106.0" text="Capacidade">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="193.0" layoutY="147.0" prefHeight="17.0" prefWidth="106.0" text="Status">
+                              <Label layoutX="60.0" layoutY="225.0" prefHeight="17.0" prefWidth="106.0" text="Status">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <ComboBox layoutX="193.0" layoutY="175.0" prefHeight="25.0" prefWidth="175.0" promptText="Status" />
-                              <Label layoutX="410.0" layoutY="147.0" prefHeight="17.0" prefWidth="106.0" text="Cama de casal">
+                              <ComboBox layoutX="60.0" layoutY="253.0" prefHeight="25.0" prefWidth="124.0" promptText="Status" />
+                              <Label layoutX="294.0" layoutY="148.0" prefHeight="17.0" prefWidth="106.0" text="Cama de casal">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <TextField layoutX="410.0" layoutY="175.0" prefHeight="25.0" prefWidth="124.0" promptText="Quantidade" />
-                              <Label layoutX="410.0" layoutY="220.0" prefHeight="17.0" prefWidth="106.0" text="Cama de Solteiro">
+                              <TextField layoutX="294.0" layoutY="176.0" prefHeight="25.0" prefWidth="124.0" promptText="Quantidade" />
+                              <Label layoutX="294.0" layoutY="221.0" prefHeight="17.0" prefWidth="106.0" text="Cama de Solteiro">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <TextField layoutX="410.0" layoutY="248.0" prefHeight="25.0" prefWidth="124.0" promptText="Quantidade" />
-                              <Label layoutX="60.0" layoutY="229.0" prefHeight="17.0" prefWidth="106.0" text="Regras">
+                              <TextField layoutX="294.0" layoutY="249.0" prefHeight="25.0" prefWidth="124.0" promptText="Quantidade" />
+                              <Label layoutX="60.0" layoutY="307.0" prefHeight="17.0" prefWidth="106.0" text="Regras">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <TextArea layoutX="60.0" layoutY="246.0" prefHeight="321.0" prefWidth="314.0" promptText="Digite as regras do quarto aqui" />
-                              <Button layoutX="442.0" layoutY="542.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Salvar" />
-                              <Button layoutX="442.0" layoutY="492.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Cancelar" />
+                              <TextArea layoutX="61.0" layoutY="332.0" prefHeight="260.0" prefWidth="589.0" promptText="Digite as regras do quarto aqui" />
+                              <Button layoutX="400.0" layoutY="627.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #3b3733;" text="Salvar" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="192.0" layoutY="627.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #B6B6B6;" text="Cancelar" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Button>
                            </children>
                         </AnchorPane>
                      </items>

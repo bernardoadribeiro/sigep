@@ -100,7 +100,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </JFXButton>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Quartos" wrappingWidth="208.13671875">
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerenciar Quartos" wrappingWidth="208.13671875">
                            <font>
                               <Font name="Arial Bold" size="18.0" />
                            </font>
@@ -142,7 +142,7 @@
                   </HBox>
                   <AnchorPane prefHeight="111.0" prefWidth="267.0">
                      <children>
-                        <Rectangle fill="#322d29" height="55.0" layoutX="24.0" layoutY="36.0" stroke="#322d29" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="10.0" width="220.0" />
+                        <Rectangle fill="#322d29" height="73.0" layoutX="24.0" layoutY="36.0" stroke="#322d29" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="10.0" width="220.0" />
                         <ImageView fx:id="fotoUsuario" fitHeight="57.0" fitWidth="60.0" layoutX="17.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../images/icons/outline_account_circle_white_24dp.png" />
