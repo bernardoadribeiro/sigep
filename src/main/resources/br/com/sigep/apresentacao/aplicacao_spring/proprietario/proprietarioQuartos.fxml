@@ -17,7 +17,7 @@
    <children>
       <VBox layoutX="144.0" layoutY="91.0" prefHeight="749.0" prefWidth="757.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gerenciamento de Quartos" wrappingWidth="499.765625">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quartos" wrappingWidth="499.765625">
                <font>
                   <Font name="Arial Rounded MT Bold" size="32.0" />
                </font>
@@ -33,9 +33,12 @@
                            <children>
                               <TableView layoutX="27.0" layoutY="114.0" prefHeight="539.0" prefWidth="702.0">
                                 <columns>
-                                  <TableColumn prefWidth="95.0" text="N° do Quarto" />
-                                  <TableColumn prefWidth="165.0" text="Status" />
-                                    <TableColumn prefWidth="441.0" text="Descrição" />
+                                  <TableColumn prefWidth="76.0" text="Quarto" />
+                                  <TableColumn prefWidth="94.0" text="Cama Casal" />
+                                    <TableColumn prefWidth="96.0" text="Cama Solteiro" />
+                                    <TableColumn prefWidth="137.0" text="Categoria" />
+                                    <TableColumn prefWidth="119.0" text="Valor" />
+                                    <TableColumn prefWidth="179.0" text="Status" />
                                 </columns>
                               </TableView>
                               <Label layoutX="27.0" layoutY="33.0" text="N° do quarto:">

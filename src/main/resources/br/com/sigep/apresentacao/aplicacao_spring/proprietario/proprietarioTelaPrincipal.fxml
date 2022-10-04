@@ -60,28 +60,6 @@
                      </children>
                   </AnchorPane>
                   <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="260.0">
-                     <children>
-                        <JFXButton fx:id="btnPagControleReservas" prefHeight="57.0" prefWidth="69.0" style="-fx-background-color: #322d29;" text=" " textFill="WHITE">
-                           <graphic>
-                              <ImageView fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../images/icons/outline_night_shelter_white_24dp.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </JFXButton>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Quarto" wrappingWidth="208.13671875">
-                           <font>
-                              <Font name="Arial Bold" size="18.0" />
-                           </font>
-                           <HBox.margin>
-                              <Insets left="10.0" />
-                           </HBox.margin>
-                        </Text>
-                     </children>
                      <VBox.margin>
                         <Insets bottom="10.0" top="30.0" />
                      </VBox.margin>
@@ -109,36 +87,6 @@
                            </HBox.margin>
                         </Text>
                      </children>
-                  </HBox>
-                  <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="260.0">
-                     <children>
-                        <JFXButton fx:id="btnPagVendas" prefHeight="57.0" prefWidth="48.0" style="-fx-background-color: #322d29;" text=" " textFill="WHITE">
-                           <graphic>
-                              <ImageView fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../images/icons/outline_store_white_24dp.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                           <HBox.margin>
-                              <Insets top="10.0" />
-                           </HBox.margin>
-                        </JFXButton>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ponto de Venda" wrappingWidth="208.13671875">
-                           <font>
-                              <Font name="Arial Bold" size="18.0" />
-                           </font>
-                           <HBox.margin>
-                              <Insets left="10.0" />
-                           </HBox.margin>
-                        </Text>
-                     </children>
-                     <VBox.margin>
-                        <Insets bottom="10.0" />
-                     </VBox.margin>
                   </HBox>
                   <AnchorPane prefHeight="111.0" prefWidth="267.0">
                      <children>
