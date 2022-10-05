@@ -49,12 +49,12 @@
                                     <Font size="24.0" />
                                  </font>
                               </Text>
-                              <Text layoutX="31.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resumo" wrappingWidth="258.765625">
+                              <Text layoutX="27.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resumo" wrappingWidth="258.765625">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
                               </Text>
-                              <VBox layoutX="51.0" layoutY="115.0">
+                              <VBox layoutX="27.0" layoutY="114.0">
                                  <children>
                                     <AnchorPane prefHeight="108.0" prefWidth="239.0">
                                        <children>
@@ -82,12 +82,12 @@
                                     </AnchorPane>
                                  </children>
                               </VBox>
-                              <Text layoutX="369.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservas" wrappingWidth="258.765625">
+                              <Text layoutX="365.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservas" wrappingWidth="258.765625">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
                               </Text>
-                              <VBox layoutX="389.0" layoutY="115.0">
+                              <VBox layoutX="363.0" layoutY="114.0">
                                  <children>
                                     <AnchorPane prefHeight="108.0" prefWidth="239.0">
                                        <children>
@@ -115,20 +115,20 @@
                                     </AnchorPane>
                                  </children>
                               </VBox>
-                              <Text layoutX="31.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado por quarto" wrappingWidth="258.765625">
+                              <Text layoutX="27.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado por quarto" wrappingWidth="258.765625">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
                               </Text>
-                              <TableView layoutX="51.0" layoutY="297.0" prefHeight="367.0" prefWidth="510.0">
+                              <TableView layoutX="27.0" layoutY="291.0" prefHeight="367.0" prefWidth="574.0">
                                 <columns>
                                   <TableColumn prefWidth="75.0" text="Quarto" />
                                   <TableColumn prefWidth="153.0" text="Receita" />
-                                    <TableColumn prefWidth="132.0" text="Faturamento" />
-                                    <TableColumn prefWidth="149.0" text="Gastos" />
+                                    <TableColumn prefWidth="154.0" text="Faturamento" />
+                                    <TableColumn prefWidth="191.0" text="Gastos" />
                                 </columns>
                               </TableView>
-                              <Button layoutX="614.0" layoutY="638.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #3b3733;" text="Ajuste manual" textFill="WHITE">
+                              <Button layoutX="614.0" layoutY="632.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #3b3733;" text="Ajuste manual" textFill="WHITE">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
