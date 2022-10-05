@@ -35,12 +35,29 @@ public class LoginController extends Controller {
     
 
     @FXML
-    public void botaoClicar(Event e){
-        Alert alert = new Alert(AlertType.INFORMATION, "Bem vindo ao sistema! "+emailLogin.getText(), ButtonType.OK);
-        alert.showAndWait();
+    public void actionLogin(Event e){
+        // Alert alert = new Alert(AlertType.INFORMATION, "Bem vindo ao sistema! "+emailLogin.getText(), ButtonType.OK);
+        // alert.showAndWait();
 
-        if (alert.getResult() == ButtonType.OK){
-            carregarScene(telaLogin, AtendenteControleReservasController.class);
+        // if (alert.getResult() == ButtonType.OK){
+        //     carregarScene(telaLogin, AtendenteControleReservasController.class);
+        // }
+
+        String login = emailLogin.getText();
+        String senha = passwordLogin.getText();
+
+        if (login.equals("atendente")){
+            carregarScene(telaLogin, AtendenteControleReservasController.class); //abre tela de controle caso for atendente
+
+        } else if (login.equals("financeiro")){
+            carregarScene(telaLogin, AtendenteControleReservasController.class); //substituir pelo controller do Dashboard quando for implementado
+
+        } else if (login.equals("proprietario")){
+            carregarScene(telaLogin, AtendenteControleReservasController.class); //substituir pelo controller do Dashboard quando for implementado
+
+        } else {
+            Alert alert = new Alert(AlertType.ERROR, "Por favor, informe seu login corretamente! ", ButtonType.OK);
+            alert.showAndWait();
         }
     }
 

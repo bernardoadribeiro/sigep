@@ -47,7 +47,7 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.login.LoginController"
                </font>
             </TextField>
             <JFXButton fx:id="buttonLogin" buttonType="RAISED" layoutX="288.0" layoutY="449.0" ripplerFill="#3b3733b0" style="-fx-background-color: #3b3733;" text="Entrar" textAlignment="CENTER" textFill="WHITE"
-            onAction="#botaoClicar">
+            onAction="#actionLogin">
                <font>
                   <Font name="Arial Rounded MT Bold" size="20.0" />
                </font>
