@@ -6,10 +6,10 @@ import br.com.sigep.apresentacao.aplicacao_spring.Controller;
 import net.rgielen.fxweaver.core.FxmlView;
 
 @Service
-@FxmlView("atendenteDetalhesQuarto.fxml")
-public class atendenteDetalhesQuarto extends Controller{
+@FxmlView("atendenteInserirReserva.fxml")
+public class AtendenteInserirReservaController extends Controller{
 
-    public atendenteDetalhesQuarto() {
+    public AtendenteInserirReservaController() {
     }
     
     

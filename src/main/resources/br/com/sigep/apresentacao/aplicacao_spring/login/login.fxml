@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Text?>
 
 <BorderPane fx:id="telaLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="br.com.sigep.apresentacao.aplicacao_spring.LoginController">
+fx:controller="br.com.sigep.apresentacao.aplicacao_spring.login.LoginController">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
          <children>

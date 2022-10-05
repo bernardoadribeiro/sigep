@@ -19,7 +19,7 @@
 <?import javafx.scene.layout.BorderPane?>
 
 <BorderPane fx:id="atendenteControle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" 
-fx:controller="br.com.sigep.apresentacao.aplicacao_spring.atendente.atendenteControleReservasController">
+fx:controller="br.com.sigep.apresentacao.aplicacao_spring.atendente.AtendenteControleReservasController">
    <center>
       <AnchorPane prefHeight="749.0" prefWidth="757.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
          <children>

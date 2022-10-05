@@ -7,10 +7,10 @@ import net.rgielen.fxweaver.core.FxmlView;
 
 @Service
 @FxmlView("financeiroMenu.fxml")
-public class financeiroMenu extends Controller {
+public class financeiroMenuController extends Controller {
     
 
-    public financeiroMenu() {
+    public financeiroMenuController() {
     }
 
 }

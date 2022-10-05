@@ -1,8 +1,9 @@
-package br.com.sigep.apresentacao.aplicacao_spring;
+package br.com.sigep.apresentacao.aplicacao_spring.login;
 
 import org.springframework.stereotype.Service;
 
-import br.com.sigep.apresentacao.aplicacao_spring.atendente.atendenteControleReservasController;
+import br.com.sigep.apresentacao.aplicacao_spring.Controller;
+import br.com.sigep.apresentacao.aplicacao_spring.atendente.AtendenteControleReservasController;
 
 //import com.jfoenix.controls.JFXButton.ButtonType;
 
@@ -17,7 +18,7 @@ import javafx.scene.layout.BorderPane;
 import net.rgielen.fxweaver.core.FxmlView;
 
 @Service
-@FxmlView("login/login.fxml")
+@FxmlView("login.fxml")
 public class LoginController extends Controller {
 
     public LoginController() {
@@ -39,7 +40,7 @@ public class LoginController extends Controller {
         alert.showAndWait();
 
         if (alert.getResult() == ButtonType.OK){
-            carregarScene(telaLogin, atendenteControleReservasController.class);
+            carregarScene(telaLogin, AtendenteControleReservasController.class);
         }
     }
 
