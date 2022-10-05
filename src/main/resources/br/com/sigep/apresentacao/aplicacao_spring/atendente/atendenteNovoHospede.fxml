@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="495.0" prefWidth="708.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+<AnchorPane fx:id="modalNovoHospede" prefHeight="495.0" prefWidth="708.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" 
 fx:controller="br.com.sigep.apresentacao.aplicacao_spring.atendente.AtendenteNovoHospedeController">
    <children>
       <VBox layoutX="144.0" layoutY="91.0" prefHeight="749.0" prefWidth="757.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -35,12 +35,12 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.atendente.AtendenteNov
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <Button layoutX="408.0" layoutY="375.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" style="-fx-background-color: #3b3733;" text="Salvar" textFill="WHITE">
+                              <Button fx:id="btnSalvar" layoutX="408.0" layoutY="375.0" mnemonicParsing="false" onAction="#addNovoHospede" prefHeight="26.0" prefWidth="172.0" style="-fx-background-color: #3b3733;" text="Salvar" textFill="WHITE">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
                               </Button>
-                              <Button layoutX="161.0" layoutY="375.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" style="-fx-background-color: #B6B6B6;" text="Cancelar" textFill="WHITE">
+                              <Button fx:id="btnCancelar" layoutX="161.0" layoutY="375.0" mnemonicParsing="false" onAction="#fechaModal" prefHeight="26.0" prefWidth="172.0" style="-fx-background-color: #B6B6B6;" text="Cancelar" textFill="WHITE">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
@@ -51,49 +51,59 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.atendente.AtendenteNov
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <ComboBox layoutX="542.0" layoutY="317.0" prefHeight="25.0" prefWidth="122.0" promptText="Selecione..." />
+                              <ComboBox fx:id="uf" layoutX="542.0" layoutY="317.0" onMouseClicked="#carregarEstados" prefHeight="25.0" prefWidth="122.0" promptText="Selecione..." />
                               <Label layoutX="474.0" layoutY="39.0" prefHeight="17.0" prefWidth="106.0" text="CPF">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <TextField layoutX="474.0" layoutY="56.0" prefHeight="25.0" prefWidth="190.0" promptText="XXX.XXX.XXX-XX" />
+                              <TextField fx:id="cpf" layoutX="474.0" layoutY="56.0" prefHeight="25.0" prefWidth="190.0" promptText="XXX.XXX.XXX-XX" />
                               <Label layoutX="55.0" layoutY="100.0" prefHeight="17.0" prefWidth="106.0" text="Email">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <TextField layoutX="55.0" layoutY="117.0" prefHeight="25.0" prefWidth="384.0" promptText="xxxxxxxx@xxxx.xxxx" />
+                              <TextField fx:id="email" layoutX="55.0" layoutY="117.0" prefHeight="25.0" prefWidth="384.0" promptText="xxxxxxxx@xxxx.xxxx" />
                               <Label layoutX="55.0" layoutY="164.0" prefHeight="17.0" prefWidth="106.0" text="Cep">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <TextField layoutX="55.0" layoutY="181.0" prefHeight="25.0" prefWidth="122.0" promptText="XXXXX-XXX" />
+                              <TextField fx:id="cep" layoutX="55.0" layoutY="181.0" onAction="#consultarCep" prefHeight="25.0" prefWidth="122.0" promptText="XXXXX-XXX" />
                               <Label layoutX="55.0" layoutY="235.0" prefHeight="17.0" prefWidth="106.0" text="Endereço">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <TextField layoutX="55.0" layoutY="252.0" prefHeight="25.0" prefWidth="480.0" promptText="Endereço" />
+                              <TextField fx:id="logradouro" layoutX="55.0" layoutY="252.0" prefHeight="25.0" prefWidth="480.0" promptText="Endereço" />
                               <Label layoutX="542.0" layoutY="235.0" prefHeight="17.0" prefWidth="106.0" text="Número">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <TextField layoutX="542.0" layoutY="252.0" prefHeight="25.0" prefWidth="122.0" promptText="Número" />
+                              <TextField fx:id="numero" layoutX="542.0" layoutY="252.0" prefHeight="25.0" prefWidth="122.0" promptText="Número" />
                               <Label layoutX="55.0" layoutY="300.0" prefHeight="17.0" prefWidth="106.0" text="Bairro">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <TextField layoutX="55.0" layoutY="317.0" prefHeight="25.0" prefWidth="122.0" promptText="Bairro" />
+                              <TextField fx:id="bairro" layoutX="55.0" layoutY="317.0" prefHeight="25.0" prefWidth="122.0" promptText="Bairro" />
                               <Label layoutX="308.0" layoutY="300.0" prefHeight="17.0" prefWidth="106.0" text="Cidade">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <TextField layoutX="308.0" layoutY="317.0" prefHeight="25.0" prefWidth="122.0" promptText="Cidade" />
+                              <TextField fx:id="cidade" layoutX="308.0" layoutY="317.0" prefHeight="25.0" prefWidth="122.0" promptText="Cidade" />
+                              <Label layoutX="474.0" layoutY="100.0" prefHeight="17.0" prefWidth="106.0" text="Telefone">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="telefone" layoutX="474.0" layoutY="117.0" prefHeight="25.0" prefWidth="190.0" promptText="(xx) 9 xxxx-xxxx">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </TextField>
                            </children>
                         </AnchorPane>
                      </items>
