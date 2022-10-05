@@ -46,12 +46,12 @@
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="92.0" layoutY="236.0" prefHeight="17.0" prefWidth="106.0" text="Observação">
+                              <Label layoutX="92.0" layoutY="255.0" prefHeight="17.0" prefWidth="106.0" text="Observação">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <TextArea layoutX="90.0" layoutY="279.0" prefHeight="282.0" prefWidth="527.0" promptText="Digite as regras do quarto aqui" />
+                              <TextArea layoutX="93.0" layoutY="279.0" prefHeight="282.0" prefWidth="524.0" promptText="Observação" />
                               <Button layoutX="387.0" layoutY="593.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" style="-fx-background-color: #3b3733;" text="Inserir bloqueio" textFill="WHITE">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
