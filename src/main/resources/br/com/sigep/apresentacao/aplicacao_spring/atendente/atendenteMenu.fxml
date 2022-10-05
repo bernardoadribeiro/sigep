@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane fx:id="menuLateral" prefHeight="749.0" prefWidth="260.0" style="-fx-background-color: #3b3733;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="br.com.sigep.apresentacao.aplicacao_spring.atendente.MenuLateralController">
+fx:controller="br.com.sigep.apresentacao.aplicacao_spring.atendente.atendenteMenuLateralController">
    <children>
       
       <VBox layoutX="2.0" layoutY="84.0" prefHeight="749.0" prefWidth="267.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">

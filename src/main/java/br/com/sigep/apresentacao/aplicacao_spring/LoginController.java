@@ -2,7 +2,7 @@ package br.com.sigep.apresentacao.aplicacao_spring;
 
 import org.springframework.stereotype.Service;
 
-import br.com.sigep.apresentacao.aplicacao_spring.atendente.ControleReservasController;
+import br.com.sigep.apresentacao.aplicacao_spring.atendente.atendenteControleReservasController;
 
 //import com.jfoenix.controls.JFXButton.ButtonType;
 
@@ -39,7 +39,7 @@ public class LoginController extends Controller {
         alert.showAndWait();
 
         if (alert.getResult() == ButtonType.OK){
-            carregarScene(telaLogin, ControleReservasController.class);
+            carregarScene(telaLogin, atendenteControleReservasController.class);
         }
     }
 
