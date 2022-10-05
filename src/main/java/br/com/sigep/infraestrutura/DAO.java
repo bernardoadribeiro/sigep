@@ -35,7 +35,7 @@ public class DAO<T> implements Repositorio<T> {
      * Implementa os metodos de CRUD.
     */
     @Override
-    public T Abrir(Long id) {
+    public T Abrir(String id) {
         // procura e retorna o obj com o id informado
 
         try {

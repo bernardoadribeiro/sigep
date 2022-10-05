@@ -3,7 +3,7 @@ package br.com.sigep.servicos;
 import java.util.List;
 
 public interface Repositorio<T> {
-    public T Abrir(Long id);
+    public T Abrir(String id);
     public boolean Salvar(T obj);
     public T Atualizar(T obj);
     public boolean Apagar(T obj);
