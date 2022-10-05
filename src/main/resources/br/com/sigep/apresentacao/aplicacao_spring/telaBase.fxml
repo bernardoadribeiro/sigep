@@ -28,4 +28,11 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.TelaBaseController">
          </children>
       </VBox>
    </bottom>
+   <left>
+      <AnchorPane fx:id="sidebar" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane fx:id="content" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <fx:include source=""></fx:include>
+   </center>
 </BorderPane>
