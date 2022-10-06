@@ -79,12 +79,12 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.quarto.DetalhesQuartoC
                                  </font>
                               </Label>
                               <TextArea layoutX="59.0" layoutY="284.0" prefHeight="282.0" prefWidth="589.0" promptText="Digite as regras do quarto aqui" />
-                              <Button layoutX="120.0" layoutY="583.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" style="-fx-background-color: #3b3733;" text="Bloquear/Desbloquear" textFill="WHITE">
+                              <Button layoutX="120.0" layoutY="583.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" style="-fx-background-color: #3b3733;" text="Bloquear" textFill="WHITE">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
                               </Button>
-                              <Button layoutX="416.0" layoutY="583.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" style="-fx-background-color: #B6B6B6;" text="Reservar" textFill="WHITE">
+                              <Button layoutX="416.0" layoutY="583.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" style="-fx-background-color: #3b3733;" text="Reservar" textFill="WHITE">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
