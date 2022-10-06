@@ -25,15 +25,6 @@ public class Controller {
             .run(args);
     }
 
-    public void carregarScene(Node parent, Class controller) {
-        Stage stage = (Stage) parent.getScene().getWindow();
-        FxWeaver fxWeaver = contextoSpring.getBean(FxWeaver.class);
-        Parent root = (Parent) fxWeaver.loadView(controller);
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
     public ConfigurableApplicationContext getContextoSpring() {
         return contextoSpring;
     }
@@ -44,6 +35,16 @@ public class Controller {
 
     public void setAncora(Node ancora) {
         this.ancora = ancora;
+    }
+
+    /* Carrega uma nova tela */
+    public void carregarScene(Node parent, Class controller) {
+        Stage stage = (Stage) parent.getScene().getWindow();
+        FxWeaver fxWeaver = contextoSpring.getBean(FxWeaver.class);
+        Parent root = (Parent) fxWeaver.loadView(controller);
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
 }

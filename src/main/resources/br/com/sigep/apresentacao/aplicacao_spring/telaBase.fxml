@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="atendenteTelaPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" 
+<BorderPane fx:id="telaBase" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" 
 fx:controller="br.com.sigep.apresentacao.aplicacao_spring.TelaBaseController">
    <bottom>
       <VBox prefHeight="19.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
@@ -33,6 +33,5 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.TelaBaseController">
    </left>
    <center>
       <AnchorPane fx:id="content" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
-      <fx:include source=""></fx:include>
    </center>
 </BorderPane>
