@@ -14,8 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="quartos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" 
-fx:controller="br.com.sigep.apresentacao.aplicacao_spring.quarto.QuartosController">
+<BorderPane fx:id="quartos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sigep.apresentacao.aplicacao_spring.quarto.QuartosController">
    <center>
       <AnchorPane prefHeight="749.0" prefWidth="757.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
          <children>
@@ -35,7 +34,7 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.quarto.QuartosControll
                            <items>
                               <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="458.0" prefWidth="706.0">
                                  <children>
-                                    <TableView layoutX="27.0" layoutY="114.0" prefHeight="539.0" prefWidth="702.0">
+                                    <TableView fx:id="tabelaQuartos" layoutX="27.0" layoutY="114.0" prefHeight="539.0" prefWidth="702.0">
                                     <columns>
                                        <TableColumn prefWidth="76.0" text="Quarto" />
                                        <TableColumn prefWidth="94.0" text="Cama Casal" />
@@ -63,7 +62,7 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.quarto.QuartosControll
                                        </font>
                                     </Label>
                                     <ComboBox layoutX="567.0" layoutY="28.0" prefHeight="25.0" prefWidth="110.0" promptText="Status" />
-                                    <Button layoutX="162.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #3b3733;" text="Buscar" textFill="WHITE">
+                                    <Button fx:id="btnBuscarQuartos" layoutX="162.0" layoutY="72.0" mnemonicParsing="false" onAction="#buscarQuartos" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #3b3733;" text="Buscar" textFill="WHITE">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
