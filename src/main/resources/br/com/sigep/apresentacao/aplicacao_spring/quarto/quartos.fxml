@@ -9,10 +9,10 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import javafx.scene.layout.BorderPane?>
 
 <BorderPane fx:id="quartos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" 
 fx:controller="br.com.sigep.apresentacao.aplicacao_spring.quarto.QuartosController">
@@ -73,7 +73,7 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.quarto.QuartosControll
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button layoutX="466.0" layoutY="71.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #3b3733;" text="Novo Quarto" textFill="WHITE">
+                                    <Button fx:id="btnNovoQuarto" layoutX="466.0" layoutY="71.0" mnemonicParsing="false" onAction="#addNovoQuarto" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #3b3733;" text="Novo Quarto" textFill="WHITE">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
@@ -90,6 +90,6 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.quarto.QuartosControll
       </AnchorPane>
    </center>
    <left>
-      <fx:include source="../atendente/atendenteMenu.fxml"></fx:include>
+      <fx:include source="../atendente/atendenteMenu.fxml" />
    </left>
 </BorderPane>
