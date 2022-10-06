@@ -17,127 +17,136 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="726.0" prefWidth="1024.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+
+<AnchorPane fx:id="atendenteControle" prefHeight="749.0" prefWidth="757.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="br.com.sigep.apresentacao.aplicacao_spring.atendente.AtendenteControleReservasController">
    <children>
-      <VBox layoutX="144.0" layoutY="91.0" prefHeight="749.0" prefWidth="757.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reservas">
-               <font>
-                  <Font name="Arial Rounded MT Bold" size="32.0" />
-               </font>
-               <VBox.margin>
-                  <Insets left="20.0" top="20.0" />
-               </VBox.margin>
-            </Text>
-            <AnchorPane prefHeight="692.0" prefWidth="757.0">
+      <fx:include source="../telaBase.fxml">
+         <left>
+            <fx:include source="atendenteMenu.fxml" />
+         </left>
+         <center>      
+            <VBox layoutX="144.0" layoutY="91.0" prefHeight="749.0" prefWidth="757.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <SplitPane dividerPositions="0.1072463768115942, 0.508695652173913" layoutX="455.0" layoutY="222.0" orientation="VERTICAL" prefHeight="692.0" prefWidth="757.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                     <items>
-                        <AnchorPane>
-                           <children>
-                              <TextField fx:id="numQuarto" layoutX="14.0" layoutY="36.0" prefHeight="25.0" prefWidth="68.0" />
-                              <Label layoutX="14.0" layoutY="14.0" text="nº do quarto">
-                                 <font>
-                                    <Font name="Arial" size="12.0" />
-                                 </font>
-                              </Label>
-                              <DatePicker fx:id="dataReferencia" layoutX="95.0" layoutY="35.0" prefHeight="25.0" prefWidth="124.0">
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </DatePicker>
-                              <Label layoutX="95.0" layoutY="13.0" text="Data de referência">
-                                 <font>
-                                    <Font name="Arial" size="12.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="229.0" layoutY="14.0" text="Categoria">
-                                 <font>
-                                    <Font name="Arial" size="12.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="340.0" layoutY="13.0" text="Tipo">
-                                 <font>
-                                    <Font name="Arial" size="12.0" />
-                                 </font>
-                              </Label>
-                              <TextField fx:id="nomeHospede" layoutX="452.0" layoutY="36.0" prefHeight="25.0" prefWidth="131.0" promptText="Nome do hóspede" />
-                              <Label layoutX="452.0" layoutY="14.0" text="Hóspede">
-                                 <font>
-                                    <Font name="Arial" size="12.0" />
-                                 </font>
-                              </Label>
-                              <JFXButton fx:id="btnBuscar" buttonType="RAISED" layoutX="647.0" layoutY="33.0" prefHeight="25.0" prefWidth="115.0" ripplerFill="#3b3733b0" style="-fx-background-color: #3b3733;" text="Buscar" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="20.0">
-                                 <font>
-                                    <Font name="Arial Bold" size="14.0" />
-                                 </font>
-                                 <effect>
-                                    <MotionBlur />
-                                 </effect>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </JFXButton>
-                              <ChoiceBox fx:id="seletorTipo" layoutX="340.0" layoutY="36.0" prefHeight="25.0" prefWidth="102.0" />
-                              <ComboBox fx:id="seletorCategoria" layoutX="229.0" layoutY="36.0" prefHeight="25.0" prefWidth="100.0" promptText="Selecione">
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </ComboBox>
-                              <JFXButton fx:id="btnLimparFiltros" buttonType="RAISED" layoutX="643.0" layoutY="6.0" prefHeight="26.0" prefWidth="115.0" ripplerFill="#3b3733b0" style="-fx-background-color: #B6B6B6;" text="Limpar Filtros" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
-                                 <font>
-                                    <Font name="Arial Bold" size="14.0" />
-                                 </font>
-                                 <effect>
-                                    <MotionBlur />
-                                 </effect>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </JFXButton>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                           <children>
-                              <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check-ins">
-                                 <font>
-                                    <Font name="Arial Rounded MT Bold" size="24.0" />
-                                 </font>
-                              </Text>
-                              <TableView fx:id="tabelaCheckins" layoutX="72.0" layoutY="45.0" prefHeight="234.0" prefWidth="735.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0">
-                                 <columns>
-                                    <TableColumn maxWidth="150.0" minWidth="75.0" prefWidth="75.0" text="Código" />
-                                    <TableColumn maxWidth="150.0" minWidth="75.0" prefWidth="75.0" text="Quarto" />
-                                    <TableColumn maxWidth="500.0" prefWidth="250.0" text="Hóspede" />
-                                    <TableColumn maxWidth="150.0" minWidth="100.0" prefWidth="100.0" text="Check-in" />
-                                    <TableColumn maxWidth="150.0" minWidth="100.0" prefWidth="100.0" text="Check-out" />
-                                 </columns>
-                              </TableView>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="10.0" layoutY="10.0">
-                           <children>
-                              <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check-outs">
-                                 <font>
-                                    <Font name="Arial Rounded MT Bold" size="24.0" />
-                                 </font>
-                              </Text>
-                              <TableView fx:id="tabelaCheckouts" prefHeight="234.0" prefWidth="735.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0">
-                                 <columns>
-                                    <TableColumn maxWidth="100.0" minWidth="75.0" prefWidth="75.0" text="Código" />
-                                    <TableColumn prefWidth="75.0" text="Quarto" />
-                                    <TableColumn prefWidth="250.0" text="Hóspede" />
-                                    <TableColumn maxWidth="120.0" minWidth="100.0" prefWidth="100.0" text="Check-in" />
-                                    <TableColumn maxWidth="120.0" minWidth="100.0" prefWidth="100.0" text="Check-out" />
-                                 </columns>
-                              </TableView>
-                           </children>
-                        </AnchorPane>
-                     </items>
-                  </SplitPane>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reservas">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="32.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <AnchorPane prefHeight="692.0" prefWidth="757.0">
+                     <children>
+                        <SplitPane dividerPositions="0.1072463768115942, 0.508695652173913" layoutX="455.0" layoutY="222.0" orientation="VERTICAL" prefHeight="692.0" prefWidth="757.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <AnchorPane>
+                                 <children>
+                                    <TextField fx:id="numQuarto" layoutX="14.0" layoutY="36.0" prefHeight="25.0" prefWidth="68.0" promptText="Núm. do Quarto" />
+                                    <Label layoutX="14.0" layoutY="14.0" text="nº do quarto">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker fx:id="data_ref" layoutX="95.0" layoutY="35.0" prefHeight="25.0" prefWidth="124.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </DatePicker>
+                                    <Label layoutX="95.0" layoutY="13.0" text="Data de referência">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="229.0" layoutY="14.0" text="Categoria">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="340.0" layoutY="13.0" text="Tipo">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="nomeHospede" layoutX="452.0" layoutY="36.0" prefHeight="25.0" prefWidth="131.0" promptText="Nome do hóspede" />
+                                    <Label layoutX="452.0" layoutY="14.0" text="Hóspede">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton fx:id="btnBuscar" buttonType="RAISED" layoutX="647.0" layoutY="33.0" prefHeight="25.0" prefWidth="115.0" ripplerFill="#3b3733b0" style="-fx-background-color: #3b3733;" text="Buscar" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="20.0">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                       <effect>
+                                          <MotionBlur />
+                                       </effect>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <ChoiceBox fx:id="tipoImovel" layoutX="340.0" layoutY="36.0" prefHeight="25.0" prefWidth="102.0" />
+                                    <ComboBox fx:id="categoriaImovel" layoutX="229.0" layoutY="36.0" prefHeight="25.0" prefWidth="100.0" promptText="Selecione">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ComboBox>
+                                    <JFXButton fx:id="btnLimparFiltros" buttonType="RAISED" layoutX="643.0" layoutY="6.0" prefHeight="26.0" prefWidth="115.0" ripplerFill="#3b3733b0" style="-fx-background-color: #B6B6B6;" text="Limpar Filtros" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                       <effect>
+                                          <MotionBlur />
+                                       </effect>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check-ins">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="24.0" />
+                                       </font>
+                                    </Text>
+                                    <TableView fx:id="tabelaCheckins" layoutX="72.0" layoutY="45.0" prefHeight="234.0" prefWidth="735.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0">
+                                       <columns>
+                                          <TableColumn maxWidth="150.0" minWidth="75.0" prefWidth="75.0" text="Código" />
+                                          <TableColumn maxWidth="150.0" minWidth="75.0" prefWidth="75.0" text="Quarto" />
+                                          <TableColumn maxWidth="500.0" prefWidth="250.0" text="Hóspede" />
+                                          <TableColumn maxWidth="150.0" minWidth="100.0" prefWidth="100.0" text="Check-in" />
+                                          <TableColumn maxWidth="150.0" minWidth="100.0" prefWidth="100.0" text="Check-out" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check-outs">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="24.0" />
+                                       </font>
+                                    </Text>
+                                    <TableView fx:id="tabelaCheckouts" prefHeight="234.0" prefWidth="735.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0">
+                                       <columns>
+                                          <TableColumn maxWidth="100.0" minWidth="75.0" prefWidth="75.0" text="Código" />
+                                          <TableColumn prefWidth="75.0" text="Quarto" />
+                                          <TableColumn prefWidth="250.0" text="Hóspede" />
+                                          <TableColumn maxWidth="120.0" minWidth="100.0" prefWidth="100.0" text="Check-in" />
+                                          <TableColumn maxWidth="120.0" minWidth="100.0" prefWidth="100.0" text="Check-out" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
                </children>
-            </AnchorPane>
-         </children>
-      </VBox>
+            </VBox>
+         </center>
+      </fx:include>
    </children>
 </AnchorPane>

@@ -1,0 +1,16 @@
+package br.com.sigep.apresentacao.aplicacao_spring.financeiro;
+
+import org.springframework.stereotype.Service;
+
+import br.com.sigep.apresentacao.aplicacao_spring.Controller;
+import net.rgielen.fxweaver.core.FxmlView;
+
+@Service
+@FxmlView("financeiroMenu.fxml")
+public class financeiroMenuController extends Controller {
+    
+
+    public financeiroMenuController() {
+    }
+
+}

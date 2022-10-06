@@ -3,6 +3,7 @@ package br.com.sigep.apresentacao.aplicacao_spring;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import br.com.sigep.apresentacao.aplicacao_spring.login.LoginController;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Parent;
