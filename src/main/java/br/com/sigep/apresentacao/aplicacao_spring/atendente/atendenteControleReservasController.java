@@ -7,10 +7,10 @@ import net.rgielen.fxweaver.core.FxmlView;
 
 @Service
 @FxmlView("atendenteControleReservas.fxml")
-public class AtendenteControleReservasController extends Controller {
+public class atendenteControleReservasController extends Controller {
     
 
-    public AtendenteControleReservasController() {
+    public atendenteControleReservasController() {
     }
 
 
