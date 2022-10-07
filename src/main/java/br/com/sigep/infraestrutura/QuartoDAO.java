@@ -1,24 +1,30 @@
 package br.com.sigep.infraestrutura;
 
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.Query;
 import javax.transaction.Transactional;
 
-import br.com.sigep.entidades.quarto.Quarto;
+import org.springframework.stereotype.Service;
 
-public class QuartoDAO<T extends Quarto> extends DAO<T>{
+import br.com.sigep.entidades.quarto.Quarto;
+import br.com.sigep.servicos.quarto.RepositorioQuarto;
+
+@Service
+public class QuartoDAO extends DAO<Quarto> implements RepositorioQuarto{
 
     // @Autowired
     // protected LogServico log;
 
-    public QuartoDAO(Class<T> classe) {
-        super(classe);
+    public QuartoDAO() {
+        super(Quarto.class);
     }
 
     /* Salva novo endereco */
     @Override
     @Transactional
-    public boolean Salvar(T objQuarto) {
+    public boolean Salvar(Quarto objQuarto) {
         if(objQuarto.getId() == 0){
             objQuarto.setDataCriacao(new Date());
         }
@@ -30,7 +36,7 @@ public class QuartoDAO<T extends Quarto> extends DAO<T>{
     /* Atualiza endereco existente */
     @Override
     @Transactional
-    public T Atualizar(T objQuarto){
+    public Quarto Atualizar(Quarto objQuarto){
         objQuarto.setUltimaAtualizacao(new Date());
         return super.Atualizar(objQuarto);
     }
