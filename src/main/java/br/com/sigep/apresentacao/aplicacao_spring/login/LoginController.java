@@ -3,7 +3,7 @@ package br.com.sigep.apresentacao.aplicacao_spring.login;
 import org.springframework.stereotype.Service;
 
 import br.com.sigep.apresentacao.aplicacao_spring.Controller;
-import br.com.sigep.apresentacao.aplicacao_spring.atendente.AtendenteControleReservasController;
+import br.com.sigep.apresentacao.aplicacao_spring.atendente.atendenteControleReservasController;
 import br.com.sigep.apresentacao.aplicacao_spring.quarto.QuartosController;
 
 //import com.jfoenix.controls.JFXButton.ButtonType;
@@ -48,10 +48,10 @@ public class LoginController extends Controller {
         String senha = passwordLogin.getText();
 
         if (login.equals("atendente")){
-            carregarScene(telaLogin, AtendenteControleReservasController.class); //abre tela de controle caso for atendente
+            carregarScene(telaLogin, atendenteControleReservasController.class); //abre tela de controle caso for atendente
 
         } else if (login.equals("financeiro")){
-            carregarScene(telaLogin, AtendenteControleReservasController.class); //substituir pelo controller do Dashboard quando for implementado
+            carregarScene(telaLogin, atendenteControleReservasController.class); //substituir pelo controller do Dashboard quando for implementado
 
         } else if (login.equals("proprietario")){
             carregarScene(telaLogin, QuartosController.class); //substituir pelo controller do Dashboard quando for implementado

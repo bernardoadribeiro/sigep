@@ -16,9 +16,9 @@ import net.rgielen.fxweaver.core.FxmlView;
 
 @Service
 @FxmlView("atendenteMenu.fxml")
-public class AtendenteMenuLateralController extends Controller{
+public class atendenteMenuLateralController extends Controller{
 
-    public AtendenteMenuLateralController() {
+    public atendenteMenuLateralController() {
     }
 
     @FXML
@@ -39,7 +39,7 @@ public class AtendenteMenuLateralController extends Controller{
     
     @FXML
     public void abrirPagControleReservas(Event e){
-        carregarScene(menuLateral, AtendenteControleReservasController.class);
+        carregarScene(menuLateral, atendenteControleReservasController.class);
     }
 
     @FXML
