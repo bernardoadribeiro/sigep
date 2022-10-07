@@ -2,25 +2,40 @@ package br.com.sigep.infraestrutura;
 
 import java.util.Date;
 
+import javax.persistence.Query;
 import javax.transaction.Transactional;
 
-//import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import br.com.sigep.entidades.pessoa.Pessoa;
+import br.com.sigep.servicos.pessoa.RepositorioPessoa;
 
-public class PessoaDAO<T extends Pessoa> extends DAO<T>{
+@Service
+public class PessoaDAO extends DAO<Pessoa> implements RepositorioPessoa {
 
-    // @Autowired
-    // protected LogServico log;
+    public PessoaDAO() {
+        super(Pessoa.class);
+    }
 
-    public PessoaDAO(Class<T> classe) {
-        super(classe);
+    /* Abre pessoa */
+    @Override
+    public Pessoa Abrir(String email) {
+        try {
+            Query consulta = getEntityManager()
+            .createQuery("select p from pessoas p where p.email = :email");
+            consulta.setParameter("email", email);
+    
+            return (Pessoa) consulta.getSingleResult();
+            } catch(Exception ex){
+                System.out.println(ex.getMessage());
+                return null;
+            }
     }
 
     /* Salva objeto pessoa */
     @Override
     @Transactional
-    public boolean Salvar(T objPessoa) {
+    public boolean Salvar(Pessoa objPessoa) {
         if(objPessoa.getId() == 0){
             objPessoa.setDataCriacao(new Date());
         }
@@ -32,7 +47,7 @@ public class PessoaDAO<T extends Pessoa> extends DAO<T>{
     /* Atualiza Pessoa existente */
     @Override
     @Transactional
-    public T Atualizar(T objPessoa){
+    public Pessoa Atualizar(Pessoa objPessoa){
         objPessoa.setUltimaAtualizacao(new Date());
         return super.Atualizar(objPessoa);
     }
