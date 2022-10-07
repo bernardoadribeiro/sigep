@@ -38,6 +38,7 @@ public class NovoQuartoController extends Controller{
     public NovoQuartoController() {
     }
 
+
     public boolean salvarNovoQuarto() {
         return false;
     }
