@@ -9,7 +9,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 
 import net.rgielen.fxweaver.core.FxmlView;
@@ -21,5 +20,16 @@ public class despesasTelaPrincipalController extends Controller {
     public despesasTelaPrincipalController(){
 
     }
+
+    @FXML BorderPane despesas;
+
+    @FXML
+	private void modalNovaDespesa(ActionEvent event) throws Exception{
+
+        ModalController modalAjusteManual = new ModalController("financeiro/despesas/despesasNovaDespesa.fxml");
+
+        modalAjusteManual.exibirModalDialogo((Button)event.getSource(), "Ajuste Manual");
+
+	}
 
 }

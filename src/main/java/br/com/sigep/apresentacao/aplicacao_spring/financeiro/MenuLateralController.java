@@ -43,21 +43,21 @@ public class MenuLateralController extends Controller {
     @FXML
     public void abrirDashboards(Event e){
 
-        //carregarScene(menuLateral, dashboardTelaPrincipalController.class);
-
-        Alert alert = new Alert(AlertType.CONFIRMATION, "Deseja sair do sistema?", ButtonType.YES, ButtonType.NO);
-        alert.showAndWait();
-
-        if (alert.getResult() == ButtonType.YES) {
-            carregarScene(getAncora(), LoginController.class);
-        }
+        carregarScene(menuLateral, dashboardTelaPrincipalController.class);
 
     }
 
     @FXML
-    public void pagDespesas(Event e){
+    public void abrirDespesas(Event e){
 
         carregarScene(menuLateral, despesasTelaPrincipalController.class);
+
+    }
+
+    @FXML
+    public void abrirRelatorios(Event e){
+
+        carregarScene(menuLateral, financeiroRelatoriosController.class);
 
     }
 
