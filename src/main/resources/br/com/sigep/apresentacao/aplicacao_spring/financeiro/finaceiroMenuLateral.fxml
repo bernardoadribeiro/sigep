@@ -15,10 +15,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="menuLateralFinanceiro" prefHeight="749.0" prefWidth="260.0" style="-fx-background-color: #3b3733;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="br.com.sigep.apresentacao.aplicacao_spring.financeiro.MenuLateralController">
+<AnchorPane fx:id="menuLateral" prefHeight="749.0" prefWidth="260.0" style="-fx-background-color: #3b3733;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sigep.apresentacao.aplicacao_spring.financeiro.MenuLateralController">
    <children>
-      <fx:include source="../telaBase.fxml"></fx:include>
+      
       <VBox layoutX="2.0" layoutY="84.0" prefHeight="749.0" prefWidth="267.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <AnchorPane>
@@ -37,7 +36,7 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.financeiro.MenuLateral
             </AnchorPane>
             <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="260.0">
                <children>
-                  <JFXButton fx:id="btnPagControleReservas" prefHeight="57.0" prefWidth="69.0" style="-fx-background-color: #322d29;" text=" " textFill="WHITE">
+                  <JFXButton fx:id="buttonDashboards" onAction="#abrirDashboards" prefHeight="57.0" prefWidth="69.0" style="-fx-background-color: #322d29;" text=" " textFill="WHITE">
                      <graphic>
                         <ImageView fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -49,7 +48,7 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.financeiro.MenuLateral
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="208.13671875">
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboards" wrappingWidth="208.13671875">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>
@@ -64,7 +63,7 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.financeiro.MenuLateral
             </HBox>
             <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="260.0">
                <children>
-                  <JFXButton fx:id="btnPagDespesas" prefHeight="57.0" prefWidth="69.0" style="-fx-background-color: #322d29;" text=" " textFill="WHITE">
+                  <JFXButton fx:id="Despesas" onAction="#abrirDespesas" prefHeight="57.0" prefWidth="69.0" style="-fx-background-color: #322d29;" text=" " textFill="WHITE">
                      <graphic>
                         <ImageView fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -88,7 +87,7 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.financeiro.MenuLateral
             </HBox>
             <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="260.0">
                <children>
-                  <JFXButton fx:id="btnPagRelatorios" prefHeight="57.0" prefWidth="48.0" style="-fx-background-color: #322d29;" text=" " textFill="WHITE">
+                  <JFXButton fx:id="btRelatorios" onAction="#abrirRelatorios" prefHeight="57.0" prefWidth="48.0" style="-fx-background-color: #322d29;" text=" " textFill="WHITE">
                      <graphic>
                         <ImageView fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -129,7 +128,7 @@ fx:controller="br.com.sigep.apresentacao.aplicacao_spring.financeiro.MenuLateral
                         <Font name="Arial Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelCargo" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="64.0" prefHeight="20.0" prefWidth="141.0" text="Adm. Financeiro" textAlignment="CENTER" textFill="#ffffffcf">
+                  <Label fx:id="labelCargo" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="64.0" prefHeight="20.0" prefWidth="141.0" text="Financeiro" textAlignment="CENTER" textFill="#ffffffcf">
                      <font>
                         <Font name="Arial" size="14.0" />
                      </font>
