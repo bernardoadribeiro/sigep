@@ -41,7 +41,7 @@ public class MenuLateralController extends Controller {
     }
 
     @FXML
-    public void a1(Event e){
+    public void abriragDashboards(Event e){
 
         carregarScene(menuLateral, dashboardTelaPrincipalController.class);
 
