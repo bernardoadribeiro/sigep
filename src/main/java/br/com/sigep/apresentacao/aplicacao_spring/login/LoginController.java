@@ -4,7 +4,6 @@ import org.springframework.stereotype.Service;
 
 import br.com.sigep.apresentacao.aplicacao_spring.Controller;
 import br.com.sigep.apresentacao.aplicacao_spring.atendente.AtendenteControleReservasController;
-import br.com.sigep.apresentacao.aplicacao_spring.financeiro.MenuLateralController;
 import br.com.sigep.apresentacao.aplicacao_spring.financeiro.dashboard.dashboardTelaPrincipalController;
 import br.com.sigep.apresentacao.aplicacao_spring.quarto.QuartosController;
 
@@ -52,7 +51,7 @@ public class LoginController extends Controller {
         if (login.equals("atendente")){
             carregarScene(telaLogin, AtendenteControleReservasController.class); //abre tela de controle caso for atendente
 
-        } else if (login.equals("f")){
+        } else if (login.equals("financeiro")){
             carregarScene(telaLogin, dashboardTelaPrincipalController.class); //substituir pelo controller do Dashboard quando for implementado
 
         } else if (login.equals("proprietario")){

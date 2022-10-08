@@ -8,7 +8,6 @@ import net.rgielen.fxweaver.core.FxmlView;
 
 @Service
 @FxmlView("despesasNovaDespesa.fxml")
-
 public class despesasNovaDespesaController extends Controller {
     
     public despesasNovaDespesaController(){
