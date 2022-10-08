@@ -41,9 +41,16 @@ public class MenuLateralController extends Controller {
     }
 
     @FXML
-    public void abriragDashboards(Event e){
+    public void abrirDashboards(Event e){
 
-        carregarScene(menuLateral, dashboardTelaPrincipalController.class);
+        //carregarScene(menuLateral, dashboardTelaPrincipalController.class);
+
+        Alert alert = new Alert(AlertType.CONFIRMATION, "Deseja sair do sistema?", ButtonType.YES, ButtonType.NO);
+        alert.showAndWait();
+
+        if (alert.getResult() == ButtonType.YES) {
+            carregarScene(getAncora(), LoginController.class);
+        }
 
     }
 
