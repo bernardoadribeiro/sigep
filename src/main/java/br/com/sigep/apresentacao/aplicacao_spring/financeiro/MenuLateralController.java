@@ -36,7 +36,7 @@ public class MenuLateralController extends Controller {
         alert.showAndWait();
 
         if (alert.getResult() == ButtonType.YES) {
-            carregarScene(getAncora(), LoginController.class);
+            carregarScene(menuLateral, LoginController.class);
         }
     }
 

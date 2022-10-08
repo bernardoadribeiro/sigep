@@ -8,12 +8,9 @@ import net.rgielen.fxweaver.core.FxmlView;
 
 @Service
 @FxmlView("dashboardAjusteManual.fxml")
-
 public class dashboardAjusteManualController extends Controller{
     
-public dashboardAjusteManualController(){
-
-
-}
+    public dashboardAjusteManualController(){
+    }
 
 }
